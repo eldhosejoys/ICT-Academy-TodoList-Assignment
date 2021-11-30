@@ -47,6 +47,7 @@ ${title}
         }
     }
     xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos", true);
+    // You can also use local JSON file "/json/todos.json"
     xhttp.send();
 }
 requestjson();
