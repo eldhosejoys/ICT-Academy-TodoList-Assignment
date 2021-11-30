@@ -42,7 +42,7 @@ ${title}
 </div></div>
                 `;
             }
-            datainfo.innerHTML = "<div class='mb-3 text-center '>Click on card to select tasks which are completed.</div><div class='d-flex justify-content-center'><div class='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4'>" + out + "</div></div>";
+            datainfo.innerHTML = "<div class='mb-3 text-center '>Click on cards to select tasks that are completed.</div><div class='d-flex justify-content-center'><div class='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4'>" + out + "</div></div>";
 
         }
     }
