@@ -8,17 +8,17 @@ function selection(i) {
             card.style.backgroundColor = "#FFF";
             card.setAttribute("selected", "0");
             count = count - 1;
-            resolve("Unselected card " + i + " and changed color");
+            resolve("Unselected card " + i + ", removed color and " + count + " tasks completed.");
         } else if (card.getAttribute("selected") == "0") {
             card.style.backgroundColor = "#ADFF2F";
             card.setAttribute("selected", "1");
             count += 1;
             if (count % 5 == 0) {
-                resolve("Selected card " + i + " and color changed and " + count + " tasks completed.");
+                resolve("Selected card " + i + ", color changed, notification popped and " + count + " tasks completed.");
                 setTimeout(function() {
                     alert("Congrats. " + count + " Tasks have been Successfully Completed");
                 }, 10);
-            } else { resolve("Selected card " + i + " and color changed."); }
+            } else { resolve("Selected card " + i + ", color changed and " + count + " tasks completed."); }
 
         } else {
             reject("An error occured during the proccess.");
